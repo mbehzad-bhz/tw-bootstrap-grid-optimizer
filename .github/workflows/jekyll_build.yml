@@ -1,0 +1,32 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  jekyll:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📂 Setup
+        uses: actions/checkout@v2
+
+      - name: 💎 Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+
+      - name: 🚀 Install dependencies & build site
+        run: |
+          bundle install
+          bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: 🚢 Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
