@@ -2,50 +2,47 @@
 'Tailwind Bootstrap Grid Optimizer'
 ---
 
-import { CodeBlock, InstallBlock, ConfigExample } from './components'
 
-# {props.title}
 
-The `tailwind-bootstrap-grid-optimizer` module is an advanced utility tool for optimizing the grid system in web development projects using TailwindCSS. Inspired by the flexibility and ease of use of the Bootstrap Grid system, this module brings similar functionality to your TailwindCSS projects.
+# Description
 
-<InstallBlock packageName="tailwind-bootstrap-grid-optimizer" />
+- Tailwind CSS is an incredibly powerful framework for building user interfaces with utility-first CSS. However, one aspect that some developers find lacking is its approach to a grid system, particularly those coming from the Bootstrap ecosystem and are accustomed to its grid system's flexibility and ease of use. 
+- The tw-bootstrap-grid-optimizer is designed specifically to address this need. It is a utility tool for Tailwind CSS that integrates the best features of the Bootstrap grid system. This means you can harness the flexibility and responsiveness of Bootstrap's grid, while still benefiting from the utility-first methodology and customization options that Tailwind CSS provides.
 
-## Usage
-
-First, require the module in your Tailwind CSS configuration file:
-
-<CodeBlock code={`const bootstrapGrid = require('tailwind-bootstrap-grid-optimizer');
-
-module.exports = {
-// ...
-plugins: [
-bootstrapGrid({
-// optional configurations
-})
-// ...
-],
-};`} />
+# Installation
+```
+npm i tw-bootstrap-grid-optimizer
+```
 
 ## Configuration
 
-You can customize the module according to your needs by passing a configuration object to the function. The available configuration options are:
+First, require the module in your Tailwind CSS configuration file:
 
-- `gridColumns`: The number of columns in the grid. Defaults to 12.
-- `gridGutterWidth`: The width of the gutters between grid items. Defaults to '1.5rem'.
-- `generateContainer`: Whether to generate container classes. Defaults to true.
-- `containerMaxWidths`: An object defining the maximum widths of the container at different screen sizes.
-- `rtl`: Whether to enable right-to-left language support. Defaults to false.
-- `respectImportant`: Whether to respect the `important` option in the Tailwind CSS configuration.
-
-<ConfigExample />
+```javascript
+module.exports = withMT({
+    content: ['./src/**/*.{js,jsx,ts,tsx,css,scss}', './index.html'],
+    darkMode: 'media', // or 'media' or 'class',
+    development: true,
+    mode: "jit",
+    theme: {
+        extend: {},
+    },
+    variants: {
+        extend: {},
+    },
+    plugins: [
+        require('tw-bootstrap-grid-optimizer')
+    ],
+});
+```
 
 ## Author
 
 **Majid Behzadnasab**
 
 - Website: [majidbehzadnasab.com](https://majidbehzadnasab.com/)
-- Github: [@](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/your-name)
+- Github: [@mbehzad-bhz](https://github.com/mbehzad-bhz)
+
 
 ## Contributing
 
