@@ -1,0 +1,21 @@
+{
+  "name": "tw-bootstrap-grid-optimizer",
+  "version": "1.0.0",
+  "description": "The `tw-bootstrap-grid-optimizer` plugin is an advanced utility tool for optimizing the grid system in web development projects using TailwindCSS. Inspired by the flexibility and ease of use of the Bootstrap Grid system, this module brings similar functionality to your TailwindCSS projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tailwindcss",
+    "fexbox",
+    "bootstrap",
+    "grid",
+    "grid",
+    "system",
+    "rtl",
+    "ltr"
+  ],
+  "author": "majid behzadnasab , pooria noruzi",
+  "license": "MIT"
+}
