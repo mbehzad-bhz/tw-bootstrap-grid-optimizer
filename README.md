@@ -6,7 +6,7 @@
 
 # Description
 
-- Tailwind CSS is an incredibly powerful framework for building user interfaces with utility-first CSS. However, one aspect that some developers find lacking is its approach to a grid system, particularly those coming from the Bootstrap ecosystem and are accustomed to its grid system's flexibility and ease of use. 
+- Tailwind CSS is an incredibly powerful framework for building user interfaces with utility-first CSS. However, one aspect that some developers find lacking is its approach to a grid system, particularly those coming from the Bootstrap ecosystem and are accustomed to its grid system's flexibility and ease of use.
 - The tw-bootstrap-grid-optimizer is designed specifically to address this need. It is a utility tool for Tailwind CSS that integrates the best features of the Bootstrap grid system. This means you can harness the flexibility and responsiveness of Bootstrap's grid, while still benefiting from the utility-first methodology and customization options that Tailwind CSS provides.
 
 # Installation
@@ -96,6 +96,10 @@ function App() {
 
 - Website: [majidbehzadnasab.com](https://majidbehzadnasab.com/)
 - Github: [@mbehzad-bhz](https://github.com/mbehzad-bhz)
+
+**Pooria Noruzi**
+
+- Github: [@pooria-noruzi](https://github.com/pooria-noruzi/)
 
 
 ## Contributing

@@ -97,6 +97,10 @@ function App() {
 - Website: [majidbehzadnasab.com](https://majidbehzadnasab.com/)
 - Github: [@mbehzad-bhz](https://github.com/mbehzad-bhz)
 
+**Pooria Noruzi**
+
+- Github: [@pooria-noruzi](https://github.com/pooria-noruzi/)
+
 
 ## Contributing
 
