@@ -1,6 +1,4 @@
----
-'Tailwind Bootstrap Grid Optimizer'
----
+# Tailwind Bootstrap Grid Optimizer
 
 
 
