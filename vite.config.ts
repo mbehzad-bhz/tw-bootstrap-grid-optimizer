@@ -10,7 +10,8 @@ import { visualizer } from 'rollup-plugin-visualizer';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(),
+  plugins: [
+      react(),
     { ...eslint({include: 'src/**/*.+(js|jsx|ts|tsx)'}), enforce: 'pre'},
     PurgeIcons(),
     compress(),
@@ -18,6 +19,7 @@ export default defineConfig({
     imagemin(),
     visualizer(),
   ],
+  base: '/tw-bootstrap-grid-optimizer',
   build: {
     sourcemap: true
   }
